@@ -1,0 +1,16 @@
+[package]
+name = "input_manager"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.9", features = ["winuser", "windowsx"] }
+
+[[bin]]
+name = "mouse_event_logger"
+path = "src/bin/mouse_event_logger.rs"
+
+[[bin]]
+name = "mouse_event_test_simulator"
+path = "src/bin/mouse_event_test_simulator.rs"
