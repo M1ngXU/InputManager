@@ -1,6 +1,6 @@
-use input_manager::structs::mouse::{MouseEvent,MouseButton};
-use input_manager::{queue, WindowsResult};
-use input_manager::sender::Event;
+use winsafe_input_manager::structs::mouse::{MouseEvent,MouseButton};
+use winsafe_input_manager::{queue, WindowsResult};
+use winsafe_input_manager::sender::Event;
 
 fn main() -> WindowsResult {
 	MouseEvent::ScrollVertical(-10).into_event_queue().execute()?;

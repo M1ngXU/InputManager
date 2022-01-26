@@ -1,8 +1,8 @@
-use input_manager::{listener, WindowsResult};
-use input_manager::listener::EventType;
-use input_manager::sender::Event;
-use input_manager::structs::keyboard::{KeyboardEvent, VirtualKey};
-use input_manager::structs::mouse::{MouseButton, MouseEvent};
+use winsafe_input_manager::{listener, WindowsResult};
+use winsafe_input_manager::listener::EventType;
+use winsafe_input_manager::sender::Event;
+use winsafe_input_manager::structs::keyboard::{KeyboardEvent, VirtualKey};
+use winsafe_input_manager::structs::mouse::{MouseButton, MouseEvent};
 
 fn main() -> WindowsResult {
 	listener::init();

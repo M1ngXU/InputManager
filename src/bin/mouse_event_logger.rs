@@ -1,4 +1,4 @@
-use input_manager::{listener, WindowsResult};
+use winsafe_input_manager::{listener, WindowsResult};
 
 fn main() -> WindowsResult {
 	listener::init();
