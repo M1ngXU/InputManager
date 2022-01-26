@@ -1,5 +1,5 @@
 [package]
-name = "input_manager"
+name = "winsafe_input_manager"
 version = "0.1.0"
 edition = "2021"
 
@@ -22,3 +22,7 @@ path = "src/bin/keyboard_event_test_simulator.rs"
 [[bin]]
 name = "keyboard_blinker"
 path = "src/bin/keyboard_blinker.rs"
+
+[[bin]]
+name = "keyboard_controls_mouse"
+path = "src/bin/keyboard_controls_mouse.rs"
