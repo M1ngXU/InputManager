@@ -1,5 +1,6 @@
 [package]
 name = "winsafe_input_manager"
+description = "Safe winapi wrapper to manage input globally (no window/dll) (Keyboard & Mouse)."
 version = "0.1.0"
 edition = "2021"
 license-file = "LICENSE"
