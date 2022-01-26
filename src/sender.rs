@@ -52,9 +52,9 @@ pub trait Event: Debug {
 #[macro_export]
 macro_rules! queue {
 	($($e:expr), +) => {
-		let mut q = ::input_manager::sender::EventQueue::new();
+		let mut q = ::winsafe_input_manager::sender::EventQueue::new();
 		$(
-			q.push(::input_manager::sender::Event::into_event_queue($e));
+			q.push(::winsafe_input_manager::sender::Event::into_event_queue($e));
 		)+
 		q.execute()?;
 	}
