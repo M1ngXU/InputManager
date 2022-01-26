@@ -5,7 +5,7 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [target.'cfg(windows)'.dependencies]
-winapi = { version = "0.3.9", features = ["winuser", "windowsx"] }
+winapi = { version = "0.3.9", features = ["winuser"] }
 
 [[bin]]
 name = "mouse_event_logger"
@@ -14,3 +14,11 @@ path = "src/bin/mouse_event_logger.rs"
 [[bin]]
 name = "mouse_event_test_simulator"
 path = "src/bin/mouse_event_test_simulator.rs"
+
+[[bin]]
+name = "keyboard_event_test_simulator"
+path = "src/bin/keyboard_event_test_simulator.rs"
+
+[[bin]]
+name = "keyboard_blinker"
+path = "src/bin/keyboard_blinker.rs"
